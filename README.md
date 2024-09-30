@@ -1,14 +1,13 @@
-# Architecting Web Application on AWS Cloud using (PAAS & SAAS)
+# Architecting Enterprise Web Application on AWS Cloud using (PAAS & SAAS)
 
 This project demonstrates how to architect a web application using AWS Cloud services. Below are the steps to implement the solution.
 
 ## Table of Contents
-1. [Project Overview](#project-overview)
-2. [Flow of Execution](#flow-of-execution)
-3. [Tools and Services](#tools-and-services)
-4. [Prerequisites](#prerequisites)
-5. [Step-by-Step Execution](#step-by-step-execution)
-6. [Conclusion)
+1.  Project Overview
+2.  Step by step execution
+3.  Tools and Services
+4.  Prerequisites
+5.  Conclusion
 
 ---
 
@@ -18,9 +17,7 @@ The objective of this project is to build and deploy a web application on AWS us
 
 ---
 
-## Flow of Execution
-
-The flow of execution is as follows:
+## Step by step execution is as follows:
 
 1. Login to AWS Account.
 2. Create a key pair for the Beanstalk instance.
@@ -28,15 +25,31 @@ The flow of execution is as follows:
 4. ![Screenshot 2024-09-24 122502](https://github.com/user-attachments/assets/778c6720-a719-4d0b-8a82-ce76093fcc95)
 
 5. Create RDS, Amazon ElasticCache, Amazon ActiveMQ.
+ Amazon RDS (Relational Database Service): Create an RDS instance to serve as the database for your application. RDS provides a scalable, managed relational database service, supporting engines like MySQL, PostgreSQL, and SQL Server. For this project, the database will store critical backend data and provide high availability.
+ 
+ ![Screenshot 2024-09-28 041814](https://github.com/user-attachments/assets/54e5f447-d9d6-4bac-9b89-5ca19146ff9f)
+
 6. Create an Elastic Beanstalk environment.
-7. Update the security group of the backend to allow traffic from the Beanstalk security group.
-8. Update the security group of the backend to allow internal traffic.
-9. Launch an EC2 instance for DB initializing.
-10. Login to the instance and initialize the RDS DB.
-11. Add a 443 HTTPS listener to the Elastic Load Balancer.
-12. Build artifacts with backend information.
-13. Deploy artifacts to Beanstalk.
-14. Create an entry in GoDaddy DNS Zones for domain management.
+10. ![Screenshot 2024-09-28 041401](https://github.com/user-attachments/assets/83ea1f16-7763-407b-8aba-49c7d3d7c54d)
+
+11. Update the security group of the backend to allow traffic from the Beanstalk security group.
+12. Update the security group of the backend to allow internal traffic.
+13. ![Screenshot 2024-09-24 122017](https://github.com/user-attachments/assets/522a79b3-ddf6-489a-93d1-483c3a904e79)
+
+14. Launch an EC2 instance for DB initializing.
+15. Login to the instance and initialize the RDS DB.
+16. ![Screenshot 2024-09-28 002210](https://github.com/user-attachments/assets/62b492e6-89bd-4024-9266-15d3a2d5f996)
+
+17. Add a 443 HTTPS listener to the Elastic Load Balancer.
+18. Build artifacts with backend information.
+19. ![image](https://github.com/user-attachments/assets/745ed473-8fc4-41f0-a3ee-7d2792d60160)
+
+20. Deploy artifacts to Beanstalk.
+21. ![Screenshot 2024-09-28 041200](https://github.com/user-attachments/assets/f9477e31-5afc-4a1a-987b-08cdfaf28445)
+
+22. Create an entry in GoDaddy DNS Zones for domain management.
+23. ![Screenshot 2024-09-28 030232](https://github.com/user-attachments/assets/fd497a57-fb92-490c-83a1-a961cedd7412)
+
 
 ---
 
